@@ -25,9 +25,7 @@ body {
 
 }
 
-.article {
-    position: center;
-}
+
 
 .image {
     width: 50vh;
@@ -84,8 +82,7 @@ h3 {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
+    display: inline;
     /* padding: 0.5rem; */
 }
 
