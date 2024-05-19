@@ -1,0 +1,164 @@
+:root {
+    /* colores */
+    --color-primario: #e30707;
+    --color-secundario: #ffd041;
+    --claro: #f6f6f6;
+    --oscuro: #00505f;
+
+    /* fuentes */
+    --titulo: "Lobster", serif;
+    --parrafo: "Roboto", sans-serif;
+
+    /* quiebres */
+    --mobile: 36rem;
+    --tablet: 72rem;
+    --laptop: 102rem;
+    --desk: 128rem;
+}
+
+body {
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.article {
+    position: center;
+}
+
+.image {
+    width: 50vh;
+    height: 50vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.625rem;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li {
+    font-family: var(--parrafo);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.05rem;
+    margin: 2rem 0;
+}
+
+h1 span {
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+    font-family: var(--titulo);
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0.5rem; */
+}
+
+nav .logo {
+    background-color: var(--color-primario);
+    font-size: 2rem;
+    font-family: var(--titulo);
+    color: var(--claro);
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: var(--oscuro);
+}
+
+nav ul li a {
+    display: block;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--claro);
+    padding: 0.5rem 1rem;
+    border-right: 0.1rem solid var(--claro);
+    transition: 0.5s;
+}
+
+nav ul li:first-child {
+    border-left: 0.1rem solid var(--claro);
+}
+
+nav ul li a:hover {
+    background-color: var(--color-secundario);
+    color: var(--oscuro);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+@media (min-width: 72rem) {
+    main {
+        flex-direction: row;
+    }
+}
+
+main article {
+    padding-bottom: 3rem;
+}
+
+
+aside {
+    border-top: 0.2rem solid var(--color-primario);
+}
+
+aside img {
+    width: 100%;
+    max-height: 15rem;
+    margin-bottom: 1.5rem;
+
+}
+
+aside article {
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid var(--oscuro);
+}
+
+aside article ul li {
+    list-style: disc;
+    margin-left: 3rem;
+}
