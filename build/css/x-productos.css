@@ -33,12 +33,12 @@ main {
 
 .card .caja.caja1 {
     position: relative;
-    background: rgb(0, 0, 0);
+    background-image: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(10rem);
 
 }
 
@@ -63,13 +63,12 @@ main {
 
 .card .caja.caja2 {
     position: relative;
-    background: rgb(255, 255, 255);
+    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    box-sizing: border-box;
-    transform: translateY(-100px);
+    padding: 2rem;
+    transform: translateY(-10rem);
 }
 
 .card:hover .caja.caja2 {
