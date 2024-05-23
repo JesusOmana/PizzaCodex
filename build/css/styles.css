@@ -73,7 +73,9 @@ h3 {
 
 nav {
     display: inline;
-    /* padding: 0.5rem; */
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 nav .logo {
@@ -110,13 +112,28 @@ nav ul li a:hover {
     color: var(--oscuro);
 }
 
+.hero {
+    width: 100%;
+    max-height: 30rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 4rem;
+    padding: 3rem;
     justify-content: center;
-
 }
 
 @media (min-width: 72rem) {
@@ -244,4 +261,17 @@ aside article ul li {
 .card a:hover {
     background-color: var(--color-secundario);
     text-decoration: underline;
+}
+
+footer {
+    background-color: var(--oscuro);
+    color: var(--claro);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p,
+b,
+span {
+    font-size: 1rem;
 }
