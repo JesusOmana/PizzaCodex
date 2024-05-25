@@ -32,86 +32,97 @@
     </header>
 
     <div class="hero">
-        <img src="https://hiraoka.com.pe/media/mageplaza/blog/post/c/o/como_saber_mi_numero_de_telefono_en_mi_celular.jpg" alt="Chica feliz llamando a Pizza Codex">
+        <img src="https://hiraoka.com.pe/media/mageplaza/blog/post/c/o/como_saber_mi_numero_de_telefono_en_mi_celular.jpg"
+            alt="Chica feliz llamando a Pizza Codex">
     </div>
 
     <div class="container">
 
-            <form class="row g-3 needs-validation p-5" novalidate id="formulario">
-                <h1>FORMULARIO DE ATENCION AL CLIENTE</h1>
-                <h5>Por favor rellene los campos solicitados para que uno de nuestros asesores te contacte.</h5>
+        <form class="row g-3 needs-validation p-5" novalidate id="formulario">
+            <h1>FORMULARIO DE ATENCION AL CLIENTE</h1>
+            <h5>Por favor rellene los campos solicitados para que uno de nuestros asesores te contacte.</h5>
 
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label" style="font-size: medium;">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" required>
-                    <div class="valid-feedback">
-                        Muy Bien!
-                    </div>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label display-6">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    <p class="h6">My bien!</p>
                 </div>
-                <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label" style="font-size: medium;">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" required>
-                    <div class="valid-feedback">
-                        Muy Bien!
-                    </div>
+                <div class="invalid-feedback">
+                    <p class="h6">Por favor ingrese un Nombre.</p>
                 </div>
-                <div class="col-md-4">
-                    <label for="validationCustomUsername" class="form-label" style="font-size: medium;">Email</label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text">@</span>
-                        <input type="text" class="form-control" id="validationCustomEmail"
-                            aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                            Por favor ingrese un Email.
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label display-6">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    <p class="h6">My bien!</p>
                 </div>
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label" style="font-size: medium;">localidad</label>
-                    <select class="form-select" id="validationCustom04" required>
-                        <option></option>
-                        <option style="font-size: small;">Ciudad de Buenos Aires</option>
-                        <option style="font-size: small;">Provincia de Buenos Aires</option>
-                    </select>
+                <div class="invalid-feedback">
+                    <p class="h6">Por favor ingrese un Nombre.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label display-6">Email</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="validationCustomEmail"
+                        aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
-                        Por favor seleccione una localidad.
+                        <p class="h6">Por favor ingrese un Email.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label" style="font-size: medium;">Barrio</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label display-6">localidad</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option></option>
+                    <option class="h4">Ciudad de Buenos Aires</option>
+                    <option class="h4">Provincia de Buenos Aires</option>
+                </select>
+                <div class="invalid-feedback">
+                    <p class="h6">Por favor ingrese una Localidad.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label display-6">Barrio</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    <p class="h6">Por favor ingrese un Barrio.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label display-6">Celular</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    <p class="h6">Por favor ingrese un Numero de Celular.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-check">
+                    <input class=" form-check-input h6" type="checkbox" id="invalidCheck" required>
+                    <label class="form-check-label h5" for="invalidCheck">
+                        Acepto las condiciones. (*)
+                    </label>
                     <div class="invalid-feedback">
-                        Por favor ingrese el Barrio.
+                        <p class="h6">Tienes que aceptar las condiciones.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label" style="font-size: medium;">Numero de
-                        Celular</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                        Por favor ingrese un numero de celular.
-                    </div>
+                <div class="form-check">
+                    <input class=" form-check-input h6" type="checkbox">
+                    <label class="form-check-label h5">
+                        Recibir promociones al email.
+                    </label>
                 </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class=" form-check-input" type="checkbox" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck" style="font-size: x-small;">
-                            Acepto las condiciones.
-                        </label>
-                        <div class="invalid-feedback" style="font-size: x-small;">
-                            Tienes que aceptar las condiciones.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
-                <div class="row pt-4">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.028294097684!2d-58.38528434585359!3d-34.60380377295425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacee31e973d%3A0xd9414ad7dee69b2a!2sAv.%20Corrientes%20942%2C%20C1043AAW%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1716415575289!5m2!1ses!2sar   "
-                        width="1200" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </form>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success btn-lg" type="submit">Enviar</button>
+            </div>
+            <div class="row pt-4 w-1200 h-250">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.028294097684!2d-58.38528434585359!3d-34.60380377295425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacee31e973d%3A0xd9414ad7dee69b2a!2sAv.%20Corrientes%20942%2C%20C1043AAW%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1716415575289!5m2!1ses!2sar   "></iframe>
+            </div>
+        </form>
     </div>
 
     <footer>
