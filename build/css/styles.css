@@ -34,7 +34,10 @@ h2,
 h3,
 p,
 a,
-li {
+li,
+label,
+select,
+option {
     font-family: var(--parrafo);
     font-weight: 400;
     font-style: normal;
@@ -120,6 +123,7 @@ nav ul li a:hover {
 }
 
 .hero img {
+    object-position: 0 4rem;
     width: 100%;
 }
 
@@ -202,7 +206,6 @@ aside article ul li {
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 2rem var(--oscuro);
-    /* cursor: pointer; */
 }
 
 .card h3 {
@@ -261,6 +264,58 @@ aside article ul li {
 .card a:hover {
     background-color: var(--color-secundario);
     text-decoration: underline;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding: 2rem;
+    background-color: var(--claro);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 2rem var(--oscuro);
+}
+
+label {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--color-secundario);
+    box-shadow: 0 0.3rem 0.5rem var(--oscuro);
+    color: var(--oscuro);
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-primario);
+    color: var(--claro);
+    box-shadow: 0 0 0.2rem var(--oscuro);
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border: none;
+}
+
+fieldset div select{
+    margin-top: 0.5rem;
+    display: block;
+    width: 100%;
 }
 
 footer {

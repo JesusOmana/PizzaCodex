@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -28,110 +28,73 @@
     </header>
 
     <div class="hero">
-        <img src="https://fulltimemotos.com.ar/wp-content/uploads/que-es-delivery-en-motos.webp" alt="Repartidor de Pizza en Moto a toda velocidad">
-   </div>
-    
+        <img src="https://fulltimemotos.com.ar/wp-content/uploads/que-es-delivery-en-motos.webp"
+            alt="Repartidor de Pizza en Moto a toda velocidad">
+    </div>
+
     <div class="container">
-        <main class="main">
+        <main>
+            <section>
+                <article>
+                    <h1>¡Disfrutá <span>Pizza&nbsp;Codex</span> sin moverte de tu zona de confort!</h1>
+                    <h2>Con un par de click recibí tu pizza favorita en minutos!</h2>
+                    <p>Con un proceso de pedido tan fácil como lanzar un hechizo, satisfacemos tus antojos con un par de
+                        clics. ¡Hacé tu pedido hoy te lo entregamos directamente a tu portal!</p>
+                </article>
+            </section>
 
-            <div class="card">
-                <img src="https://picsum.photos/1200/900?random=1" alt="Pizza Star Wars">
-                <h3>Pizza Star Wars</h3>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Nombre y apellido completo">
 
-                <div class="detalle">
-                    <ul>
-                        <li>Mozzarella</li>
-                        <li>Tomate del imperio</li>
-                        <li>Aceitunas Darth</li>
-                        <li>Albahaca Goku</li>
-                    </ul>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloremque maxime enim
-                        aspernatur est sit aut dolore itaque cumque qua</p>
-                    <a href="#">AGREGAR</a>
-                </div>
-            </div>
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" placeholder="Calle y número de puerta">
 
-            <div class="card">
-                <img src="https://picsum.photos/1200/900?random=2" alt="">
-                <h3>Pizza GOT</h3>
-                <div class="detalle">
-                    <ul>
-                        <li>Mozzarella Dayneris</li>
-                        <li>Salsa Dragón</li>
-                        <li>Queso Azul Caminante</li>
-                        <li>Huevo Snow</li>
-                    </ul>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloremque maxime enim
-                        aspernatur est sit aut dolore itaque cumque qua</p>
-                    <a href="#">AGREGAR</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/1200/900?random=2" alt="">
-                <h3>Pizza Breaking</h3>
-                <div class="detalle">
-                    <ul>
-                        <li>Mozzarella Say My Name</li>
-                        <li>Salsa Hat</li>
-                        <li>Pollo Los Hermanos</li>
-                        <li>Hierbas Salamanca</li>
-                    </ul>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloremque maxime enim
-                        aspernatur est sit aut dolore itaque cumque qua</p>
-                    <a href="#">AGREGAR</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/1200/900?random=2" alt="">
-                <h3>Pizza Breaking</h3>
-                <div class="detalle">
-                    <ul>
-                        <li>Mozzarella Say My Name</li>
-                        <li>Salsa Hat</li>
-                        <li>Pollo Los Hermanos</li>
-                        <li>Hierbas Salamanca</li>
-                    </ul>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloremque maxime enim
-                        aspernatur est sit aut dolore itaque cumque qua</p>
-                    <a href="#">AGREGAR</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/1200/900?random=2" alt="">
-                <h3>Pizza Breaking</h3>
-                <div class="detalle">
-                    <ul>
-                        <li>Mozzarella Say My Name</li>
-                        <li>Salsa Hat</li>
-                        <li>Pollo Los Hermanos</li>
-                        <li>Hierbas Salamanca</li>
-                    </ul>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloremque maxime enim
-                        aspernatur est sit aut dolore itaque cumque qua</p>
-                    <a href="#">AGREGAR</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/1200/900?random=2" alt="">
-                <h3>Pizza Breaking</h3>
-                <div class="detalle">
-                    <ul>
-                        <li>Mozzarella Say My Name</li>
-                        <li>Salsa Hat</li>
-                        <li>Pollo Los Hermanos</li>
-                        <li>Hierbas Salamanca</li>
-                    </ul>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non doloremque maxime enim
-                        aspernatur est sit aut dolore itaque cumque qua</p>
-                    <a href="#">AGREGAR</a>
-                </div>
-            </div>
+                <label for="localidad">Localidad</label>
+                <input type="text" id="localidad" placeholder="localidad / barrio">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Nro de area y telefono">
+
+                <fieldset>
+                    <div>
+                        <label for="sabor">Sabores</label>
+                        <select name="pedido" id="sabor">
+                            <option value="#" disabled selected>Elegí tu pizza</option>
+                            <option value="01">Star Wars</option>
+                            <option value="02">GOT</option>
+                            <option value="03">Breaking</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="medida">Tamaño</label>
+                        <select name="pedido" id="medida">
+                            <option value="#" disabled selected>Hay hambre?</option>
+                            <option value="1">Chica 4 porc.</option>
+                            <option value="2">Mediana 6 porc.</option>
+                            <option value="3">Grande 8 porc.</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <label for="pago">Método de pago</label>
+                <select name="pedido" id="pago">
+                    <option value="#" disabled>Selecciona forma de pago</option>
+                    <option value="1">Efectivo</option>
+                    <option value="2">Transferencia</option>
+                    <option value="3">QR</option>
+                </select>
+
+                <input type="submit" value="Pedir Pizza!" onclick="validar_form()">
+
+            </form>
         </main>
     </div> <!-- Fin Container -->
 
-
     <footer>
-        <p>&copy; <span id="copy_year"></span>  Pizza Codex  -  desarrollo y diseño web <b>«J2 - Com. 24138 - Grupo 10 »</b></p>
+        <p>&copy; <span id="copy_year"></span> Pizza Codex - desarrollo y diseño web <b>«J2 - Com. 24138 - Grupo 10
+                »</b></p>
     </footer>
     <script src="build/js/script.js"></script>
 </body>
