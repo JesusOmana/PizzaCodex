@@ -323,7 +323,7 @@ fieldset div select{
     width: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 720px) {
     fieldset {
         display: grid;
         grid-template-columns: 1fr 1fr;
